@@ -471,40 +471,6 @@ namespace Microsoft.Samples.Kinect.BodyBasics
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
-        /// <summary>
-        /// make motor torqur price each
-        /// </summary>
-        private int min_9 = 1100;
-        private int max_9 = 2800;
-        private int min_10 = 1600;
-        private int max_10 = 2400;
-        private int Dxl_posi10;
-        public int _Dxl_position10
-        {
-            get
-            {
-                return this.Dxl_posi10;
-            }
-            set
-            {
-                this.Dxl_posi10 = value;
-                OnPropertyChanged("_Dxl_position10");
-            }
-        }
-        private int Dxl_posi9;
-        public int _Dxl_position9
-        {
-            get
-            {
-                return this.Dxl_posi9;
-            }
-            set
-            {
-                this.Dxl_posi9 = value;
-                OnPropertyChanged("_Dxl_position9");
-            }
-        }
         
         
 
@@ -754,12 +720,5 @@ namespace Microsoft.Samples.Kinect.BodyBasics
 
         }
 
-        /// <summary>
-        /// 보내기 버튼 
-        /// </summary>
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-            Set++;
-        }
     }
 }
